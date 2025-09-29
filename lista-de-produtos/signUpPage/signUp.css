@@ -24,23 +24,11 @@ form {
   gap: 1rem;
 }
 
-label {
-  display: block;
-  color: rgb(39, 39, 39);
-  font-size: 1.2rem;
-  margin-bottom: 0.4rem;
-}
-
 fieldset {
   display: flex;
   gap: 1.5rem;
   width: 100%;
   border: none;
-
-  div {
-    flex-grow: 1;
-    width: 100%;
-  }
 }
 
 .btn-container {
