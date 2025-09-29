@@ -1,0 +1,118 @@
+.title-h1 {
+  margin-bottom: 2rem;
+  font-size: 3.4rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.search-sort-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem;
+  width: 90%;
+}
+
+.btn-sort,
+.btn-search {
+  cursor: pointer;
+  border-style: none;
+  border-radius: 1.2rem;
+  padding: 0.5rem 0.9rem;
+  background-color: #91bfff;
+  font-weight: 600;
+  width: 10rem;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.btn-sort:hover,
+.btn-search:hover {
+  color: #fff;
+  background-color: #6fa9ff;
+}
+
+.search-container {
+  display: flex;
+  flex-flow: row;
+  gap: 1rem;
+  width: 60%;
+}
+
+#searchInput {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+table {
+  width: 90%;
+  text-align: center;
+  align-items: center;
+  border-collapse: collapse;
+  background: linear-gradient(130deg, #9ca1d8, #7178c8);
+  color: #fff;
+  box-shadow: 0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.1);
+
+  th,
+  td {
+    line-height: 1.4;
+    padding: 1.2rem;
+  }
+
+  td {
+    border-top: 0.1rem solid rgba(220, 220, 220, 0.516);
+  }
+
+  thead {
+    background: rgba(255, 255, 255, 0.45);
+    color: rgb(7, 65, 104);
+  }
+
+  tr {
+    border-radius: 1rem;
+  }
+
+  .td-item {
+    width: 70%;
+    text-align: center;
+    border-left: 0.1rem solid rgba(220, 220, 220, 0.516);
+    border-right: 0.1rem solid rgba(220, 220, 220, 0.516);
+  }
+
+  .td-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .btn-edit-item,
+  .btn-remove-item {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .btn-remove-item {
+    color: #fff;
+    background: rgb(202, 84, 84);
+  }
+  .btn-edit-item {
+    background: rgb(206, 147, 225);
+  }
+
+  .btn-edit-item:hover {
+    font-weight: bold;
+    background-color: rgb(233, 168, 255);
+  }
+  .btn-remove-item:hover {
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+  }
+}

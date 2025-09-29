@@ -1,0 +1,57 @@
+/* 
+#4c92ff
+#6fa9ff
+#91bfff
+#a3c9ff
+#b5d3ff
+#accffd
+#c1dbfe
+#d6e7fe
+#eaf3ff
+#f5f9ff
+#ffffff 
+*/
+
+/* ESTILIZAÇÕES GLOBAIS */
+body {
+  display: flex;
+  flex-flow: column;
+  background: #f5f9ff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.4rem 0;
+}
+
+input,
+select {
+  padding: 1rem 1.8rem;
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  outline-color: #9cc5ff;
+}
+
+input::placeholder,
+select::placeholder {
+  color: rgb(149, 150, 150);
+}
+
+form,
+.search-sort-container {
+  background: rgba(145, 191, 255, 0.28);
+  box-shadow: 0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: none;
+}

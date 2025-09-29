@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="400" viewBox="120 160 280 220">
+  <defs>
+    <!-- Multi-stop gradient for cart -->
+    <linearGradient id="g_cart" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4c92ff"/>
+      <stop offset="25%" stop-color="#6fa9ff"/>
+      <stop offset="50%" stop-color="#91bfff"/>
+      <stop offset="75%" stop-color="#a3c9ff"/>
+      <stop offset="100%" stop-color="#b5d3ff"/>
+    </linearGradient>
+
+    <!-- Multi-stop gradient for checkmark -->
+    <linearGradient id="g_check" x1="0" x2="1" y1="1" y2="0">
+      <stop offset="0%" stop-color="#6fa9ff"/>
+      <stop offset="50%" stop-color="#91bfff"/>
+      <stop offset="100%" stop-color="#d6e7fe"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Minimal cart with multi-stop gradient -->
+  <path d="M130 190 H360 Q380 190 380 210 V270 Q380 290 360 290 H160 L150 320 H340" 
+        stroke="url(#g_cart)" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="180" cy="340" r="20" fill="url(#g_cart)"/>
+  <circle cx="320" cy="340" r="20" fill="url(#g_cart)"/>
+
+  <!-- Big checkmark inside cart with its own gradient -->
+  <path d="M200 230 L240 270 L300 190" 
+        stroke="url(#g_check)" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="../assets/img/productlist_logo.svg"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles-global.css" />
+    <link rel="stylesheet" href="../css/header-navbar.css" />
+    <link rel="stylesheet" href="./signUp.css" />
     <title>Cadastro de Produtos</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <a href="../homePage/home.html">
+        <img
+          src="../assets/img/productlist_logo.svg"
+          alt="Logo da Empresa"
+          id="logo"
+        />
+      </a>
+      <nav>
+        <ul>
+          <a href="../homePage/home.html"><li>Home</li></a>
+          <a href="../signUpPage/signUp.html"><li>Cadastro</li></a>
+          <a href="../listPage/list.html"><li>Lista</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form id="form">
+        <h2>Cadastro de Produto</h2>
+        <div class="input-container">
+          <fieldset>
+            <div>
+              <label for="produto">Produto</label>
+              <input
+                type="text"
+                id="produto"
+                name="produto"
+                placeholder="Nome do produto"
+                required
+              />
+            </div>
+            <div>
+              <label for="preco">Preço (R$)</label>
+              <input
+                type="number"
+                id="preco"
+                name="preco"
+                step="0.01"
+                placeholder="R$ 0,00"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria" required>
+              <option value="">Selecione...</option>
+              <option value="alimentos">Alimentos</option>
+              <option value="bebidas">Bebidas</option>
+              <option value="higiene">Higiene</option>
+              <option value="outros">Outros</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="origem">Origem</label>
+            <input
+              type="text"
+              id="origem"
+              name="origem"
+              placeholder="Ex: Nacional / Importado"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="lote">Lote</label>
+            <input
+              type="text"
+              id="lote"
+              name="lote"
+              placeholder="Código do lote"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="validade">Data de Validade</label>
+            <input type="date" id="validade" name="validade" required />
+          </div>
+        </div>
+        <div class="btn-container">
+          <button type="submit" class="btn-add">Adicionar</button>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>

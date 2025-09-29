@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="../assets/img/productlist_logo.svg"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles-global.css" />
+    <link rel="stylesheet" href="../css/header-navbar.css" />
+    <link rel="stylesheet" href="./home.css" />
     <title>HomePage</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <a href="../homePage/home.html">
+        <img
+          src="../assets/img/productlist_logo.svg"
+          alt="Logo da Empresa"
+          id="logo"
+        />
+      </a>
+      <nav>
+        <ul>
+          <a href="../homePage/home.html"><li>Home</li></a>
+          <a href="../signUpPage/signUp.html"><li>Cadastro</li></a>
+          <a href="../listPage/list.html"><li>Lista</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="title-h1">Bem-vindo ao ProductList</h1>
+      <p class="subtitle">
+        Sua solução completa para gerenciar e organizar seus produtos de forma
+        eficiente.
+      </p>
+      <div class="button-container">
+        <a href="../signUpPage/signUp.html" class="btn-page-cadastrar"
+          >Cadastrar Produto</a
+        >
+        <a href="../listPage/list.html" class="btn-page-listagem"
+          >Ver Lista de Produtos</a
+        >
+      </div>
+    </main>
+  </body>
 </html>

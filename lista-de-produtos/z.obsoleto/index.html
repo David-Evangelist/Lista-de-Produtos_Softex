@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href=".styles.css" />
+    <!-- <link rel="stylesheet" href="./css/responsive.css" /> -->
+    <title>Lista de Compras</title>
+  </head>
+  <body>
+    <main>
+      <section class="form-section">
+        <form id="form">
+          <div class="input-container">
+            <label for="itens">Adicionar produto:</label>
+            <input
+              type="text"
+              id="itens"
+              name="itens"
+              placeholder="Digite o nome do produto"
+              value
+            />
+          </div>
+          <div class="btn-container">
+            <button type="submit" class="btn-add">Adicionar</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="table-section">
+        <h1 class="title-h1">Lista de Produtos</h1>
+
+        <div class="search-sort-container">
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Pesquisar..." />
+            <button id="searchButton" class="btn-search">Pesquisar</button>
+          </div>
+          <button onclick="sortTable()" class="btn-sort">Ordenar</button>
+        </div>
+
+        <table id="table" class="display-none">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Produtos</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+.button-container a {
+  display: block;
+  position: relative;
+  text-align: center;
+  align-content: center;
+  height: 30rem;
+  width: 40rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: transform 0.2s ease-in, color 0.2s ease-in;
+}
+
+.button-container a:hover {
+  color: transparent;
+  transform: scale(1.05);
+}
+
+.button-container a::before {
+  border-radius: 1.5rem;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  transition: opacity 0.2s ease-in;
+}
+.button-container a:hover::before {
+  opacity: 0;
+}
+
+.btn-page-cadastrar {
+  background-image: url("../assets/img/page-cadastro.png");
+  background-size: 120%;
+}
+
+.btn-page-listagem {
+  background-image: url("../assets/img/page-lista.png");
+  background-size: 100%;
+}
+
+.btn-page-cadastrar,
+.btn-page-listagem {
+  background-position: center;
+  background-repeat: no-repeat;
+}

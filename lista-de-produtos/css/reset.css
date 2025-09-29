@@ -1,3 +1,17 @@
+/* 
+#4c92ff
+#6fa9ff
+#91bfff
+#a3c9ff
+#b5d3ff
+#accffd
+#c1dbfe
+#d6e7fe
+#eaf3ff
+#f5f9ff
+#ffffff 
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +23,11 @@ html {
 }
 
 body {
-  display: flex;
-  flex-flow: column;
+  /* display: flex;
+  flex-flow: column; */
   min-height: 100svh;
   min-width: 100%;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -25,6 +39,12 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+
+h1,
+h2 {
+  color: #304d75;
+}
+
 p,
 a,
 label,
