@@ -32,6 +32,7 @@ select {
   border: none;
   border-radius: 1rem;
   width: 100%;
+  background-color: #ffffff;
 }
 
 input:focus,
@@ -54,4 +55,16 @@ form,
 
 fieldset {
   border: none;
+}
+
+fieldset div {
+  flex-grow: 1;
+  width: 100%;
+}
+
+label {
+  display: block;
+  color: rgb(39, 39, 39);
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
 }
