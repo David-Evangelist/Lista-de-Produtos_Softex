@@ -58,6 +58,59 @@
         </thead>
         <tbody id="table-body"></tbody>
       </table>
+
+      <dialog id="editModal">
+        <section class="modal-content">
+          <h2>Editar Produto</h2>
+          <form id="editForm" method="dialog">
+            <div class="input-container">
+              <fieldset>
+                <div>
+                  <label for="editProduto">Produto</label>
+                  <input type="text" id="editProduto" required />
+                </div>
+                <div>
+                  <label for="editPreco">Preço (R$)</label>
+                  <input type="number" id="editPreco" step="0.01" required />
+                </div>
+              </fieldset>
+              <div>
+                <label for="editCategoria">Categoria</label>
+                <select id="editCategoria" required>
+                  <option value="alimentos">Alimentos</option>
+                  <option value="bebidas">Bebidas</option>
+                  <option value="higiene">Higiene</option>
+                  <option value="outros">Outros</option>
+                </select>
+              </div>
+              <div>
+                <label for="editOrigem">Origem</label>
+                <input type="text" id="editOrigem" required />
+              </div>
+              <div>
+                <label for="editLote">Lote</label>
+                <input type="text" id="editLote" required />
+              </div>
+              <div>
+                <label for="editValidade">Data de Validade</label>
+                <input type="date" id="editValidade" required />
+              </div>
+            </div>
+            <div class="btn-container">
+              <button type="submit" class="btn-add">Salvar</button>
+              <button
+                type="button"
+                class="btn-cancel"
+                onclick="closeEditModal()"
+              >
+                Cancelar
+              </button>
+            </div>
+          </form>
+        </section>
+      </dialog>
     </main>
+
+    <script src="./list.js"></script>
   </body>
 </html>
