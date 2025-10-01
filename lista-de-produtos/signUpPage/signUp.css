@@ -53,3 +53,27 @@ fieldset {
     color: #fff;
   }
 }
+
+@media (max-width: 830px) {
+  main {
+    padding: 0 4rem;
+  }
+
+  form {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 2rem;
+  }
+  form {
+    min-width: 100%;
+    padding: 2rem;
+  }
+
+  fieldset {
+    flex-direction: column;
+  }
+}

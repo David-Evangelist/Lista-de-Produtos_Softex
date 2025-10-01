@@ -17,11 +17,7 @@
 .btn-search {
   cursor: pointer;
   border-style: none;
-  border-radius: 1.2rem;
-  padding: 0.5rem 0.9rem;
   background-color: #91bfff;
-  font-weight: 600;
-  width: 10rem;
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 
@@ -29,6 +25,19 @@
 .btn-search:hover {
   color: #fff;
   background-color: #6fa9ff;
+}
+
+.btn-sort {
+  border-radius: 1.2rem;
+  padding: 0.5rem 0.9rem;
+  width: 10rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.btn-search {
+  padding: 1.2rem;
+  border-radius: 50%;
 }
 
 .search-container {
@@ -45,8 +54,14 @@
   width: 100%;
 }
 
-table {
+.table-container {
+  display: flex;
   width: 90%;
+  overflow-x: auto;
+}
+
+table {
+  min-width: 100%;
   text-align: center;
   align-items: center;
   border-collapse: collapse;
@@ -199,4 +214,62 @@ dialog::backdrop {
 #editForm .btn-cancel:hover {
   background-color: #828283;
   color: #fff;
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 1rem;
+  }
+
+  .search-sort-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 95%;
+  }
+
+  .table-container {
+    width: 95%;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  #editModal {
+    min-width: 95%;
+    padding: 2rem;
+  }
+
+  #editForm {
+    min-width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  fieldset {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 880px) {
+  .search-sort-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  #editModal {
+    min-width: 95%;
+    padding: 2rem;
+  }
+
+  #editForm {
+    min-width: 100%;
+    padding: 2rem 1.5rem;
+  }
 }

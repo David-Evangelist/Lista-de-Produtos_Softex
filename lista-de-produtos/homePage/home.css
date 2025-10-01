@@ -1,3 +1,10 @@
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -57,4 +64,23 @@
 .btn-page-listagem {
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 906px) {
+  main {
+    padding: 5rem 4rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-container a {
+    width: 30rem;
+    height: 25rem;
+    /* font-size: 1.8rem; */
+  }
 }
