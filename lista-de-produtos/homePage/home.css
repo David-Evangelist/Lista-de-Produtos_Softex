@@ -1,24 +1,4 @@
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  margin-top: 4rem;
-}
-
 .button-container a {
-  display: block;
-  position: relative;
-  text-align: center;
-  align-content: center;
-  height: 30rem;
-  width: 40rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.1);
-  font-weight: 600;
-  font-size: 2rem;
-  line-height: 1.4;
-  text-decoration: none;
   transition: transform 0.2s ease-in, color 0.2s ease-in;
 }
 
@@ -43,18 +23,3 @@
   opacity: 0;
 }
 
-.btn-page-cadastrar {
-  background-image: url("../assets/img/page-cadastro.png");
-  background-size: 120%;
-}
-
-.btn-page-listagem {
-  background-image: url("../assets/img/page-lista.png");
-  background-size: 100%;
-}
-
-.btn-page-cadastrar,
-.btn-page-listagem {
-  background-position: center;
-  background-repeat: no-repeat;
-}

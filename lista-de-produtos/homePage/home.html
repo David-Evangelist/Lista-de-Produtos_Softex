@@ -8,10 +8,14 @@
       type="image/svg"
       href="../assets/img/productlist_logo.svg"
     />
+
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/styles-global.css" />
     <link rel="stylesheet" href="../css/header-navbar.css" />
     <link rel="stylesheet" href="./home.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>HomePage</title>
   </head>
   <body>
@@ -33,16 +37,24 @@
     </header>
 
     <main>
-      <h1 class="title-h1">Bem-vindo ao ProductList</h1>
-      <p class="subtitle">
+      <h1>Bem-vindo ao ProductList</h1>
+      <p>
         Sua solução completa para gerenciar e organizar seus produtos de forma
         eficiente.
       </p>
-      <div class="button-container">
-        <a href="../signUpPage/signUp.html" class="btn-page-cadastrar"
+
+      <div
+        class="flex justify-center items-center !mt-[4rem] gap-x-[4rem] button-container"
+      >
+        <a
+          href="../signUpPage/signUp.html"
+          class="inline-block relative text-center content-center h-[30rem] w-[40rem] rounded-[1.5rem] font-semibold !text-[2rem] no-underline shadow-[0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.1)] bg-[url('../assets/img/page-cadastro.png')] bg-size-[120%] bg-position-[center] bg-no-repeat"
           >Cadastrar Produto</a
         >
-        <a href="../listPage/list.html" class="btn-page-listagem"
+
+        <a
+          href="../listPage/list.html"
+          class="inline-block relative text-center content-center h-[30rem] w-[40rem] rounded-[1.5rem] font-semibold !text-[2rem] no-underline shadow-[0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.1)] bg-[url('../assets/img/page-lista.png')] bg-size-[100%] bg-position-[center] bg-no-repeat"
           >Ver Lista de Produtos</a
         >
       </div>
