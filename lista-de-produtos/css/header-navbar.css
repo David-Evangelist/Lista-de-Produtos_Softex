@@ -40,8 +40,9 @@ nav ul li {
   text-align: center;
   text-transform: uppercase;
   color: black;
-  font-weight: 400;
-  background-color: #d6e7fe;
+  font-weight: bold;
+  width: 12rem;
+  color: #304d75;
   border-radius: 1.5rem;
   transition: color 0.2s ease-in, background-color 0.2s ease-in,
     font-weight 0.2s ease-in;
